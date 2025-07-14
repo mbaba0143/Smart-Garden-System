@@ -1,28 +1,45 @@
-# Smart-Garden-System
-A smart IoT garden automation system that senses soil moisture and controls water pump using Arduino and Blynk platform.
-# Smart Garden System
+# 🌱 Smart Garden System using Raspberry Pi
 
-This project is an IoT-based Smart Garden System that automatically waters plants based on soil moisture levels. It helps in saving water and maintaining healthy plants without manual effort.
+An IoT-based Smart Garden System built on **Raspberry Pi** that automates plant watering using soil moisture sensors and provides real-time environmental monitoring. The system helps maintain healthy plants with minimal human intervention.
 
-## 💡 Key Features
-- Automatic watering when soil is dry
-- Real-time temperature and humidity monitoring
-- Mobile app control using Blynk (or ThingSpeak)
-- Low-cost and eco-friendly solution
+## 📌 Features
 
-## 🔧 Technologies Used
-- Arduino Uno / NodeMCU
-- Soil Moisture Sensor
-- DHT11 Sensor (Temperature + Humidity)
-- Relay Module
-- Water Pump
-- Blynk App (IoT platform)
+- 🌧️ Automatically waters plants based on soil moisture levels
+- 🌡️ Monitors temperature and humidity (DHT11)
+- 📶 Sends data to the cloud using ThingSpeak or Blynk
+- 📱 Access real-time readings on your mobile
+- 💧 Reduces water wastage with precision irrigation
 
-## 👨‍💻 My Role
-- Designed and implemented the complete circuit
-- Developed Arduino code for automation
-- Connected sensors and IoT platform
-- Tested and deployed the full system
+## 🔧 Hardware Components
 
-## 📌 Note
-Code and circuit files will be uploaded soon.
+- ✅ Raspberry Pi 4B
+- ✅ Soil Moisture Sensor
+- ✅ DHT11 Sensor (Temperature + Humidity)
+- ✅ Relay Module (to control pump)
+- ✅ Mini Water Pump (DC)
+- ✅ Jumper Wires, Breadboard
+- ✅ Power Supply
+
+---
+
+## 💻 Software & Tools
+
+- Raspberry Pi OS (Lite or Full)
+- Python 3 (main programming language)
+- Libraries: `Adafruit_DHT`, `RPi.GPIO`, `requests`
+- ThingSpeak / Blynk (for IoT Dashboard)
+- VNC / SSH (for remote access)
+
+---
+
+## 🧠 System Workflow
+
+1. Raspberry Pi reads soil moisture and DHT11 values
+2. If soil is dry → relay turns on water pump
+3. All sensor data is sent to ThingSpeak for live monitoring
+4. Pump stops when moisture is sufficient
+
+---
+
+
+
